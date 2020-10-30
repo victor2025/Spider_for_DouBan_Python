@@ -6,7 +6,7 @@ import re               #正则表达式，进行文字匹配
 import urllib.request,urllib.error  #制定url,获取网络数据
 import xlwt             #进行excel操作
 import sqlite3          #进行SQLite数据库操作
-from re_Setting import ReSetting
+from RE_Setting import ReSetting
 import get_functions
 import major_functions
 
