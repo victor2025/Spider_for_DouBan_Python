@@ -4,7 +4,7 @@ import get_functions
 
 def major_data_get(base_url,re_setting):
     data_list=[]
-    for i in range(0, 1):  # 调用获取页面信息的函数，10次
+    for i in range(0, 10):  # 调用获取页面信息的函数，10次
         url = base_url + "?start=" + str(i * 25)
         html = ask_URL(url)  # 保存获取到的网页资源
         # 逐一解析数据
@@ -15,6 +15,7 @@ def major_data_get(base_url,re_setting):
             item = str(item)
             data = get_functions.get_all(re_setting, item)
             data_list.append(data)
+
     return data_list
 
 # 得到指定url中的内容
